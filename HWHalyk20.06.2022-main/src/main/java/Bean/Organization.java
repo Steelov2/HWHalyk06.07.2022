@@ -1,44 +1,44 @@
-package main.java.Organization;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.io.Serializable;
-
+package Bean;
 
 import java.time.LocalDate;
-@XmlRootElement(name = "user")
-public class Organization implements Serializable  {
+
+public class Organization{
     long id;
-    String Title;
+    String title;
     String Address;
     LocalDate creationDate;
 
-    public Organization() {}
+    public Organization() {
+        super();
+    }
+
     public Organization(long id, String title, String address, LocalDate creationDate) {
         this.id = id;
-        Title = title;
+        this.title = title;
         Address = address;
         this.creationDate = creationDate;
     }
 
-
     public long getId() {
         return id;
     }
-    @XmlElement
-    public void setId(long id) {this.id = id;    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
-    @XmlElement
+
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getAddress() {
         return Address;
     }
-    @XmlElement
+
     public void setAddress(String address) {
         Address = address;
     }
@@ -46,7 +46,7 @@ public class Organization implements Serializable  {
     public LocalDate getCreationDate() {
         return creationDate;
     }
-    @XmlElement
+
     public void setCreationDate(LocalDate creationDate) {
         this.creationDate = creationDate;
     }

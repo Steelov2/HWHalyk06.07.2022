@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Organization" %>
+<h1><%= "Bean" %>
 </h1>
 <br/>
 <a href="hello-org">click me</a>
