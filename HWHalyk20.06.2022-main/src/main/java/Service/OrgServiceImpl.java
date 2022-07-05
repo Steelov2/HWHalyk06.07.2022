@@ -1,11 +1,7 @@
 package main.java.Service;
-
-import com.sun.org.apache.xpath.internal.operations.Or;
 import main.java.Organization.Organization;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.HashMap;
